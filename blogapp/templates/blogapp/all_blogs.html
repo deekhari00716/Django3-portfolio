@@ -1,9 +1,20 @@
-<h1>My Blog!!</h1>
+{% extends 'portfolio/base.html' %}
 
-{% for inside in insides %}
+{% block content %}
 
-<h2>{{ inside.title }}</h2>
-<p>{{ inside.text }}</p>
-<h5>{{ inside.date }}</h5>
 
-{% endfor %}
+
+            <h1>My Reviews</h1>
+
+            <h3>Deekshith has {{ insides.count }} review{{ insides.count|pluralize }}</h3>
+
+            {% for inside in insides %}
+
+            <h2>{{ inside.title }}</h2>
+            <h5>{{ inside.date }}</h5>
+            <p>{{ inside.text }}</p>
+
+
+            {% endfor %}
+
+  {% endblock %}

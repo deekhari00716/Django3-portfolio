@@ -10,14 +10,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="{% static "portfolio/DKLOGO.png" %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>Deekshith Hari</title>
   </head>
   <body>
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav id="topNav" class="navbar navbar-expand-md navbar-light">
             <div class="container">
               <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static "portfolio/DKLOGO.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
-                <span>Deekshith Hari</span>
+                <span id="DK">Deekshith Hari</span>
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,12 +42,12 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://www.instagram.com/deekshi_mambally/" target="_blank">
+                    <a class="nav-link" href="https://www.instagram.com/deekshi_mambally/" target="_blank" style="margin-right:16px">
                           <img src="{% static "portfolio/instagram.png" %}" width="24" height="24">
                     </a>
                   </li>
                   <li>
-                    <a role="button" href="{% url 'blogapp:all_blogs' %}" class="btn btn-primary">Reviews</a>
+                    <a role="button" href="{% url 'blogapp:all_blogs' %}" class="btn btn-primary" style="margin-right:16px">Reviews</a>
                   </li>
                   <li>
                     <a role="button" href="https://www.worldometers.info/coronavirus/" class="btn btn-danger">Covid19</a>
